@@ -1,0 +1,20 @@
+ :root {
+      --primary-color: #2563eb;
+      --secondary-color: #0d0d0e;
+      --accent-color: #facc15;
+      --light-color: #f8fafc;
+      --text-color: #e2e8f0;
+      --card-bg: #181818;
+    }
+    * { font-family: 'Poppins', sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { background-color: var(--secondary-color); color: var(--text-color); }
+    header { background-color: rgba(16, 16, 17, 0.9); backdrop-filter: blur(10px); }
+    header a { transition: 0.3s; }
+    header a:hover { background-color: var(--accent-color); color: black; }
+    .hero { background: linear-gradient(135deg,#000000 , #242324 ,#1e1e1f); }
+    .btn-primary { background-color: var(--accent-color); color: black; transition: 0.3s; }
+    .btn-primary:hover { background-color: #fde047; transform: scale(1.05); }
+    .card { background-color: var(--card-bg); transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); }
+    .card i { color: var(--accent-color); }
