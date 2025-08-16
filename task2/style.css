@@ -14,14 +14,15 @@
         }
 
         .container {
-            width: 60%;
+            width: 90%;         
+            max-width: 400px;   
             background-color: #ffffff;
             display: flex;
             flex-direction: column;
             justify-content: center;
             border: 1px solid #ccc;
             border-radius: 10px;
-            padding: 5%;
+            padding: 3%;
         }
 
         label {
@@ -77,9 +78,35 @@
         .btn:hover {
             background-color: #0056b3;
         }
+        .box{
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        
 
+        .box img {
+        flex: 1; /* الصورة تاخد 1 جزء */
+        max-width: 400px; /* متخليش الصورة تكبر قوي */
+        }
+
+        .box .container {
+        flex: 1 /* الفورم ياخد ضعف مساحة الصورة */
+        }
         /* Responsive */
         @media (max-width: 768px) {
+            .box {
+                flex-direction: column; /* خليهم فوق بعض */
+                align-items: center; /* خليهم في النص */
+            }
+            
+            .box img {
+            
+            max-width: 200px; /* متخليش الصورة تكبر قوي */
+            }
             .container {
                 width: 80%;
                 padding: 20px;

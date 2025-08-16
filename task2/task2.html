@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Contact Form</h1>
+  <h1>📩 Contact Us</h1>
+
+  <div class="box">
+    <img src="telephone.png" alt="Contact Icon" class="contact-icon">
+
     <div class="container">
-        <form id="contactForm">
-            <label for="fullName">Full Name :</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name">
-            <p class="warning"></p>
+      <form id="contactForm">
+        <label for="fullName"><i class="fa-solid fa-user"></i> Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+        <p class="warning"></p>
 
-            <label for="email">Email :</label>
-            <input type="text" id="email" name="email" placeholder="Enter your Email">
-            <p class="warning"></p>
+        <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" >
+        <p class="warning"></p>
 
-            <label for="subject">Subject :</label>
-            <input type="text" id="subject" name="subject" placeholder="Enter Subject">
-            <p class="warning"></p>
+        <label for="subject"><i class="fa-solid fa-heading"></i> Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter subject">
+        <p class="warning"></p>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
-            <p class="warning"></p>
+        <label for="message"><i class="fa-solid fa-message"></i> Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+        <p class="warning"></p>
 
-            <button type="submit" class="btn">Submit</button>
-        </form>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
 
-        <div class="message">
-            <p class="success" id="success"></p>
-        </div>
+      <div class="message">
+        <p class="success" id="success"></p>
+      </div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
