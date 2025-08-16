@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Blog</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind (مرة واحدة بس) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <style>
+    body{
+      font-family:'Poppins',sans-serif;
+      background-color: rgb(250, 250, 236);
+      min-height:100vh;
+    }
+    
+  </style>
+</head>
+<body class="text-gray-900">
+  <!-- Header -->
+  <header class="py-6 px-4 bg-gradient-to-tr from-[#722e80] via-[#cb24ec] to-[#6f2477] text-center">
+    <h1 class="text-white font-bold text-3xl md:text-5xl mb-6">My Personal Blog</h1>
+
+    <div class="flex flex-col md:flex-row md:justify-center md:items-center gap-4">
+      <nav class="flex gap-3 overflow-x-auto md:overflow-visible pb-2">
+        <button data-category="All" class="bg-white p-3 rounded-md hover:bg-fuchsia-400">All</button>
+        <button data-category="Tech" class="bg-white p-3 rounded-md hover:bg-fuchsia-400">Tech</button>
+        <button data-category="Travel" class="bg-white p-3 rounded-md hover:bg-fuchsia-400">Travel</button>
+        <button data-category="Food" class="bg-white p-3 rounded-md hover:bg-fuchsia-400">Food</button>
+             </nav>
+
+      <input id="searchInput"
+      type="text" 
+      placeholder="Search posts..."  class="w-full md:w-80 p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+  </header>
+
+  <!-- Cards Grid -->
+  <section>
+    <div id="cards-container" class="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- الكروت هتتعمل بالـ JS -->
+    </div>
+
+    <!-- Pagination -->
+    <div class="container mx-auto px-4 pb-10">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p id="page-info" class="text-sm text-gray-600"></p>
+
+        <nav id="pagination" class="flex items-center gap-2" aria-label="Pagination">
+          <!-- الأزرار بتتبني بالـ JS -->
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-tr from-[#50205a] via-[#b81ed6] to-[#571c5e] text-white py-6 mt-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 My Personal Blog. All rights reserved.</p>
+      <p class="mt-2 flex items-center justify-center gap-4">
+        <a href="https://github.com/AlaaAtef2003" class="hover:text-fuchsia-300"><i class="fab fa-github text-xl"></i></a>
+        <a href="https://www.linkedin.com/in/alaa-atef-7bb189239" class="hover:text-fuchsia-300"><i class="fab fa-linkedin text-xl"></i></a>
+      </p>
+    </div>
+  </footer>
+<script src="script.js"></script>
+
+</script>
+
+</body>
+</html>
