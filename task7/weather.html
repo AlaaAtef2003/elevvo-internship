@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    </head>
+    <style>
+        body{
+            background-image: url("france.svg");
+             background-size: cover;
+                background-position: center;
+               width: 100vw;   /* عرض الشاشة */
+  height: 100vh;
+
+        }
+        .temp-card{
+            background-color: rgb(239, 236, 241);
+            border-radius: 6px;
+        }
+    </style>
+    <body>
+        <div class="container p-5 ">
+
+            <!-- Search -->
+            <div class="search mb-4 mt-3">
+                <input type="text" id="search-bar" class="form-control"
+                    placeholder="🔍 Search city...">
+            </div>
+
+            <!-- Weather cards -->
+            <section>
+                <div class="row g-4 py-5" >
+
+                    <!-- Today card -->
+                    <div class="col-md-4">
+                        <div class="temp-card shadow p-4 h-100">
+                            <div class="d-flex justify-content-between">
+                                <p id="today">Monday</p>
+                                <p id="today-data">10 May</p>
+                            </div>
+
+                            <div class="text-center">
+                                <h3 class="text-start" id="location"></h3>
+                                <div class="d-flex  justify-content-around">
+                                    <h2 id="today-degree"
+                                    class="fw-bold display-4 d-flex align-items-center justify-content-center"></h2>
+                                <img id="today-icon" width="90"
+                                    alt="Weather Icon">
+                                    </div>
+                                <p id="today-description" class="text-start"></p>
+                            </div>
+
+                            <div
+                                class="details d-flex justify-content-around mt-3">
+                                <span><i class="fas fa-umbrella"></i> <span
+                                        id="humidty">--</span>%</span>
+                                <span><i class="fas fa-wind"></i> <span
+                                        id="wind">--</span> km/h</span>
+                                <span><i class="far fa-compass"></i> <span
+                                        id="compass">--</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next day card -->
+                    <div class="col-md-4">
+                        <div class="temp-card shadow p-4 text-center h-100">
+                            <p class="nextDay">Tuesday</p>
+                            <img class="nextDay-icon" width="90"
+                                alt="Weather Icon">
+                            <h3 class="max-degree">--<sup>°</sup>C</h3>
+                            <p class="min-degree">--<sup>°</sup>C</p>
+                            <p class="nextDay-description">Description</p>
+                        </div>
+                    </div>
+
+                    <!-- Next day card -->
+                    <div class="col-md-4">
+                        <div class="temp-card shadow p-4 text-center h-100">
+                            <p class="nextDay">Wednesday</p>
+                            <img class="nextDay-icon" width="90"
+                                alt="Weather Icon">
+                            <h3 class="max-degree">--<sup>°</sup>C</h3>
+                            <p class="min-degree">--<sup>°</sup>C</p>
+                            <p class="nextDay-description">Description</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <footer class="fixed-bottom text-white">
+            <p class="text-center">🌤️ Weather App | Powered by Your API</p>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="weather.js"></script>
+    </body>
+</html>
