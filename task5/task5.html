@@ -21,110 +21,56 @@
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body>
+<body class="light-theme">
 
-    <nav class="navbar navbar-expand-lg bg-white navbar-light d-flex justify-between sticky-top fixed-top" style="z-index: 50;">
-  <div class="container">
-    <!-- Logo -->
-    <a class="navbar-brand fw-bold text-primary" href="#">
-      <i class="bi bi-lightning-charge-fill me-1"></i> TechSaaS
-    </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top shadow-sm">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold text-primary" href="#">
+          <i class="fa-solid fa-bolt me-1"></i> TechSaaS
+        </a>
 
-    <!-- Toggler -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Links -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-        <!-- From Uiverse.io by RiccardoRapelli --> 
-<label class="switch">
-  <input id="input" type="checkbox" checked="darkTheme" />
-  <div class="slider round">
-    <div class="sun-moon">
-      <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50"></circle>
-      </svg>
-      <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50"></circle>
-      </svg>
-      <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50"></circle>
-      </svg>
-      <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50"></circle>
-      </svg>
-      <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50"></circle>
-      </svg>
-      <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50"></circle>
-      </svg>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            
+            <!-- Theme Toggle -->
+            <li class="nav-item ms-lg-3">
+              <label class="switch">
+                <input id="theme-toggle" type="checkbox"/>
+                <div class="slider round">
+                  <div class="sun-moon"></div>
+                  <div class="stars"></div>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50"></circle>
-      </svg>
-      <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50"></circle>
-      </svg>
-      <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50"></circle>
-      </svg>
-      <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50"></circle>
-      </svg>
-      <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50"></circle>
-      </svg>
-      <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50"></circle>
-      </svg>
-    </div>
-    <div class="stars">
-      <svg id="star-1" class="star" viewBox="0 0 20 20">
-        <path
-          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-        ></path>
-      </svg>
-      <svg id="star-2" class="star" viewBox="0 0 20 20">
-        <path
-          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-        ></path>
-      </svg>
-      <svg id="star-3" class="star" viewBox="0 0 20 20">
-        <path
-          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-        ></path>
-      </svg>
-      <svg id="star-4" class="star" viewBox="0 0 20 20">
-        <path
-          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-        ></path>
-      </svg>
-    </div>
-  </div>
-</label>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<section id="hero" class="py-5 ">
+<!-- Hero -->
+<section id="hero" class="py-5">
   <div class="container">
     <div class="row align-items-center">
       <!-- Text -->
       <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right">
         <h1 class="display-4 fw-bold mb-3">
-          Welcome to <span class="text-primary">Landkit</span>.<br> Develop anything.
+          Welcome to <span class="text-primary">TechSaaS</span>.<br> Manage smarter.
         </h1>
         <p class="lead mb-4">
-          Build a beautiful, modern website with flexible Bootstrap components built from scratch.
+          Simplify task management, boost productivity, and collaborate with your team effortlessly.
         </p>
         <div class="d-flex justify-content-center justify-content-lg-start gap-3">
           <a href="#pricing" class="btn btn-primary btn-lg px-4">Get Started</a>
@@ -140,13 +86,14 @@
   </div>
 </section>
 
-<section id="features" class="py-5 bg-light">
+<!-- Features -->
+<section id="features" class="py-5 ">
   <div class="container text-center">
     <h2 class="fw-bold mb-4">Powerful Features</h2>
     <p class="mb-5">Everything you need to stay on top of your projects.</p>
     <div class="row g-4">
       <div class="col-lg-4 col-sm-12">
-        <div class="card h-100 shadow-lg border border-0 hover-effect">
+        <div class="card h-100 shadow-lg border-0 hover-effect">
           <div class="card-body">
             <i class="fa-solid fa-chart-line fa-3x text-primary mb-4"></i>
             <h5 class="card-title">Analytics Dashboard</h5>
@@ -156,7 +103,7 @@
       </div>
       
       <div class="col-lg-4 col-sm-12">
-        <div class="card h-100 shadow-lg border border-0 hover-effect">
+        <div class="card h-100 shadow-lg border-0 hover-effect">
           <div class="card-body">
             <i class="fa-solid fa-users fa-3x text-primary mb-4"></i>
             <h5 class="card-title">Team Collaboration</h5>
@@ -166,7 +113,7 @@
       </div>
       
       <div class="col-lg-4 col-sm-12">
-        <div class="card h-100 shadow-lg border border-0 hover-effect">
+        <div class="card h-100 shadow-lg border-0 hover-effect">
           <div class="card-body">
             <i class="fa-solid fa-cloud fa-3x text-primary mb-4"></i>
             <h5 class="card-title">Cloud Sync</h5>
@@ -178,110 +125,104 @@
   </div>
 </section>
 
-<section id="testimonials" class="py-5 " >
-    <h2 class="fw-bold mb-4 text-center ">testimonials</h2>
-    <p class="mb-5 text-center">Everything you need to stay on top of your projects.</p>
-     <div class="container text-center">
-      <div class="row">
-         <div class="col">
-            <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
+<!-- Testimonials -->
+<section id="testimonials" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">What Our Clients Say</h2>
+    <p class="mb-5">Trusted by thousands of professionals worldwide.</p>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card p-3 shadow border-0 h-100 text-start hover-effect">
           <i class="fa fa-quote-left fa-2x mb-3 text-primary"></i>
-          <p>Outstanding BBQ experience! The brisket melts in your mouth and the staff is incredibly friendly and attentive.</p>
-          <div class="card-body d-flex justify-content-start p-0 ms-0">
-            <img src="image.png" class="img-fluid rounded-circle mb-2" alt="Customer 3" width="50">
-            <div class="ms-3 d-flex flex-column justify-content-start">
-              <h5 class="card-title mb-0 text-primary">Robert Brown</h5>
-              <p class="card-text">Business Owner</p>
+          <p>"TechSaaS completely transformed how our team collaborates. It's intuitive and powerful!"</p>
+          <div class="d-flex align-items-center">
+            <img src="image.png" class="img-fluid rounded-circle" width="50">
+            <div class="ms-3">
+              <h6 class="mb-0 text-primary">Johnson </h6>
+              <small>Project Manager</small>
             </div>
           </div>
         </div>
-         </div>
-          <div class="col">
-            <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
-          <i class="fa fa-quote-left fa-2x mb-3 text-primary"></i>
-          <p>Outstanding BBQ experience! The brisket melts in your mouth and the staff is incredibly friendly and attentive.</p>
-          <div class="card-body d-flex justify-content-start p-0 ms-0">
-            <img src="image.png" class="img-fluid rounded-circle mb-2" alt="Customer 3" width="50">
-            <div class="ms-3 d-flex flex-column justify-content-start">
-              <h5 class="card-title mb-0 text-primary">Robert Brown</h5>
-              <p class="card-text">Business Owner</p>
-            </div>
-          </div>
-        </div>
-         </div>
-          <div class="col">
-            <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
-          <i class="fa fa-quote-left fa-2x mb-3 text-primary"></i>
-          <p>Outstanding BBQ experience! The brisket melts in your mouth and the staff is incredibly friendly and attentive.</p>
-          <div class="card-body d-flex justify-content-start p-0 ms-0">
-            <img src="image.png" class="img-fluid rounded-circle mb-2" alt="Customer 3" width="50">
-            <div class="ms-3 d-flex flex-column justify-content-start">
-              <h5 class="card-title mb-0 text-primary">Robert Brown</h5>
-              <p class="card-text">Business Owner</p>
-            </div>
-          </div>
-        </div>
-         </div>
-          <div class="col">
-            <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
-          <i class="fa fa-quote-left fa-2x mb-3 text-primary"></i>
-          <p>Outstanding BBQ experience! The brisket melts in your mouth and the staff is incredibly friendly and attentive.</p>
-          <div class="card-body d-flex justify-content-start p-0 ms-0">
-            <img src="image.png" class="img-fluid rounded-circle mb-2" alt="Customer 3" width="50">
-            <div class="ms-3 d-flex flex-column justify-content-start">
-              <h5 class="card-title mb-0 text-primary">Robert Brown</h5>
-              <p class="card-text">Business Owner</p>
-            </div>
-          </div>
-        </div>
-         </div>
-          <div class="col">
-            <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
-          <i class="fa fa-quote-left fa-2x mb-3 text-primary"></i>
-          <p>Outstanding BBQ experience! The brisket melts in your mouth and the staff is incredibly friendly and attentive.</p>
-          <div class="card-body d-flex justify-content-start p-0 ms-0">
-            <img src="image.png" class="img-fluid rounded-circle mb-2" alt="Customer 3" width="50">
-            <div class="ms-3 d-flex flex-column justify-content-start">
-              <h5 class="card-title mb-0 text-primary">Robert Brown</h5>
-              <p class="card-text">Business Owner</p>
-            </div>
-          </div>
-        </div>
-         </div>
       </div>
+      <div class="col-md-3">
+        <div class="card p-3 shadow border-0 h-100 text-start hover-effect">
+          <i class="fa fa-quote-left fa-2x mb-3 text-primary"></i>
+          <p>"TechSaaS completely transformed how our team collaborates. It's intuitive and powerful!"</p>
+          <div class="d-flex align-items-center">
+            <img src="image.png" class="img-fluid rounded-circle" width="50">
+            <div class="ms-3">
+              <h6 class="mb-0 text-primary">ahmed Johnson</h6>
+              <small>Project Manager</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3 shadow border-0 h-100 text-start hover-effect">
+          <i class="fa fa-quote-left fa-2x mb-3 text-primary"></i>
+          <p>"TechSaaS completely transformed how our team collaborates. It's intuitive and powerful!"</p>
+          <div class="d-flex align-items-center">
+            <img src="image.png" class="img-fluid rounded-circle" width="50">
+            <div class="ms-3">
+              <h6 class="mb-0 text-primary">mohamed Johnson</h6>
+              <small>Project Manager</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3 shadow border-0 h-100 text-start hover-effect">
+          <i class="fa fa-quote-left fa-2x mb-3 text-primary"></i>
+          <p>"TechSaaS completely transformed how our team collaborates. It's intuitive and powerful!"</p>
+          <div class="d-flex align-items-center">
+            <img src="image.png" class="img-fluid rounded-circle" width="50">
+            <div class="ms-3">
+              <h6 class="mb-0 text-primary">ali Johnson</h6>
+              <small>Project Manager</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat 2 more testimonials -->
+    </div>
   </div>
 </section>
-<section id="pricing"class="py-5 bg-light">
-<div class="container text-center">
-    <h2 class="fw-bold mb-4">pricing</h2>
-    <p class="mb-5">Everything you need to stay on top of your projects.</p>
+
+<!-- Pricing -->
+<section id="pricing" class="py-5 ">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Flexible Pricing</h2>
+    <p class="mb-5">Choose the plan that fits your needs.</p>
     <div class="row g-4">
       <div class="col-lg-4 col-sm-12">
-        <div class="card h-100 shadow-lg border border-0 hover-effect">
+        <div class="card h-100 shadow-lg border-0 hover-effect">
           <div class="card-body">
-            <i class="fa-solid fa-chart-line fa-3x text-primary mb-4"></i>
-            <h5 class="card-title">Analytics Dashboard</h5>
-            <p class="card-text">Track progress with real-time charts and performance insights.</p>
+            <h5 class="card-title">Starter</h5>
+            <p class="display-6 fw-bold">$9<span class="fs-6">/mo</span></p>
+            <p>Perfect for individuals and small teams.</p>
+            <a href="#" class="btn btn-outline-primary">Get Started</a>
           </div>
         </div>
       </div>
       
       <div class="col-lg-4 col-sm-12">
-        <div class="card h-100 shadow-lg border border-primary hover-effect">
+        <div class="card h-100 shadow-lg border-primary border-2 hover-effect">
           <div class="card-body">
-            <i class="fa-solid fa-users fa-3x text-primary mb-4"></i>
-            <h5 class="card-title">Team Collaboration</h5>
-            <p class="card-text">Work together seamlessly with chat, comments, and file sharing.</p>
+            <h5 class="card-title">Pro</h5>
+            <p class="display-6 fw-bold">$29<span class="fs-6">/mo</span></p>
+            <p>Best for growing teams and businesses.</p>
+            <a href="#" class="btn btn-primary">Choose Plan</a>
           </div>
         </div>
       </div>
       
       <div class="col-lg-4 col-sm-12">
-        <div class="card h-100 shadow-lg border border-0 hover-effect">
+        <div class="card h-100 shadow-lg border-0 hover-effect">
           <div class="card-body">
-            <i class="fa-solid fa-cloud fa-3x text-primary mb-4"></i>
-            <h5 class="card-title">Cloud Sync</h5>
-            <p class="card-text">Access your projects anytime, anywhere with secure cloud storage.</p>
+            <h5 class="card-title">Enterprise</h5>
+            <p class="display-6 fw-bold">$99<span class="fs-6">/mo</span></p>
+            <p>Advanced solutions for large organizations.</p>
+            <a href="#" class="btn btn-outline-primary">Contact Us</a>
           </div>
         </div>
       </div>
@@ -289,14 +230,49 @@
   </div>
 </section>
 
+<!-- CTA -->
+<section class="py-5 text-center bg-primary text-white">
+  <div class="container">
+    <h2 class="fw-bold">Ready to boost your productivity?</h2>
+    <p class="mb-4">Start your free trial today. No credit card required.</p>
+    <a href="#pricing" class="btn btn-light btn-lg px-5">Get Started</a>
+  </div>
+</section>
 
-</body>
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="task5.js"></script>
-  <script>
-    AOS.init();
-  </script>
+<!-- Footer -->
+<footer class="py-4 text-center bg-dark text-white">
+  <p class="mb-0">&copy; 2025 TechSaaS. All rights reserved.</p>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // Theme Toggle
+  const toggle = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  toggle.addEventListener("change", () => {
+    if (toggle.checked) {
+      body.classList.replace("light-theme", "dark-theme");
+      localStorage.setItem("theme", "dark");
+    } else {
+      body.classList.replace("dark-theme", "light-theme");
+      localStorage.setItem("theme", "light");
+    }
+  });
+
+  // Load saved theme
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.replace("light-theme", "dark-theme");
+    toggle.checked = true;
+  }
+</script>
+
+<style>
+</style>
+
 </body>
 </html>
